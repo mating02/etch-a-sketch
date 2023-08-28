@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: aquamarine;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+.top {
+    display:flex;
+    background: linear-gradient(to bottom, aqua, rgb(6, 240, 174));
+    color:rgb(142, 78, 201);
+    justify-content: center;
+    align-items: center;
+}
+@font-face {
+    font-family: 'sketchy';
+    src: url('sketch.ttf') format('woff2');
+}
+#title {
+    font-size: 44px;
+    font-family: 'sketchy';
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    width: 400px;
+    background-color: blanchedalmond;
+}
+
+.square {
+    background-color: blanchedalmond;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    transition: background-color 0.1s ease-in-out;
+    cursor:crosshair;
+}
+
+.square:hover {
+    cursor:crosshair;
+}
