@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,29 @@
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   <div class="flex-container">
-    <header class="top">
-        <div id="title">Etch a sketch!</div>
-    </header>
-    <div class="grid">
+    <div class="flex-container">
+        <header class="top">
+            <div id="title">Etch a sketch!</div>
+        </header>
+        <div class="main">
+            <div class="grid">
+            </div>
+            <div class="instruction">
+            <button id="pencil"></button>
+            <p id="start">Double click anywhere to start!</p>
+            <p id="end">Click once to stop!</p>
+            </div>
+        </div>
+        <div id="pixels">16 x 16</div>
+        <div class="buttons">
+            <input id="slider" type="range" min="16" max="100" value="16">
+            <button id="eraser"></button>
+            <button id="clear">Clear</button>
+            <button id="random"></button>
+        </div>
     </div>
-   </div>
 </body>
+
 </html>
